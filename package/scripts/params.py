@@ -37,7 +37,7 @@ log_dir = config['configurations']['elastic-env']['elastic_log_dir']
 pid_dir = '/var/run/elasticsearch'
 pid_file = '/var/run/elasticsearch/elasticsearch.pid'
 hostname = config['hostname']
-java64_home = config['hostLevelParams']['java_home']
+java64_home = config['ambariLevelParams']['java_home']
 elastic_env_sh_template = config['configurations']['elastic-env']['content']
 sysconfig_template = config['configurations']['elastic-sysconfig']['content']
 
