@@ -19,6 +19,7 @@ limitations under the License.
 """
 
 from resource_management.libraries.script import Script
+import socket
 
 # server configurations
 config = Script.get_config()
@@ -36,7 +37,7 @@ user_group = config['configurations']['elastic-env']['user_group']
 log_dir = config['configurations']['elastic-env']['elastic_log_dir']
 pid_dir = '/var/run/elasticsearch'
 pid_file = '/var/run/elasticsearch/elasticsearch.pid'
-hostname = config['configurations']['elastic-env']['network_host']
+hostname = socket.gethostname()
 java64_home = config['ambariLevelParams']['java_home']
 elastic_env_sh_template = config['configurations']['elastic-env']['content']
 sysconfig_template = config['configurations']['elastic-sysconfig']['content']
