@@ -44,7 +44,7 @@
     <!--  Logging Configurations -->
     <property>
         <name>path_data</name>
-        <value>"/opt/lmm/es_data"</value>
+        <value>"/mnt/sda/es_data"</value>
         <description>Path to directory where to store index data allocated for this node. e.g. "/mnt/first", "/mnt/second"</description>
     </property>
     <property>

@@ -27,7 +27,7 @@
   </property>
   <property>
     <name>user_group</name>
-    <value>elasticsearch</value>
+    <value>hadoop</value>
     <description>The group for Elasticsearch</description>
   </property>
   <property>
