@@ -181,7 +181,7 @@
     </property>
     <property>
         <name>network_host</name>
-        <value>_lo_,_eth0_</value>
+        <value>_lo_,_p1p1_</value>
         <description>Network interface(s) will bind to. </description>
     </property>
 </configuration>

@@ -37,7 +37,7 @@ def elastic():
 
     Directory(directories,
               create_parents=True,
-              # recursive=True,
+              recursive=True,
               mode=0755,
               owner=params.elastic_user,
               group=params.elastic_user
@@ -62,7 +62,7 @@ def elastic():
 
     print "Master sysconfig: /etc/sysconfig/elasticsearch"
     File(format("/etc/sysconfig/elasticsearch"),
-         owner="root",
-         group="root",
+         owner="elasticsearch",
+         group="hadoop",
          content=InlineTemplate(params.sysconfig_template)
          )
